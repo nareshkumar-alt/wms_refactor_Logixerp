@@ -1,44 +1,40 @@
-2026-04-18 09:08:51 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
-2026-04-18 09:08:51 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
-2026-04-18 09:08:51 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
-2026-04-18 09:08:51 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_both_invalid_credentials
-2026-04-18 09:08:51 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
-2026-04-18 09:08:56 INFO  TC003_SigninNegativeTest:139 - ***** Starting NEG-003: Verify signin fails with both invalid credentials *****
-2026-04-18 09:08:56 INFO  TC003_SigninNegativeTest:149 - Entering invalid username: invalid_user_xyz
-2026-04-18 09:08:56 INFO  TC003_SigninNegativeTest:154 - Entering invalid password
-2026-04-18 09:08:56 INFO  TC003_SigninNegativeTest:158 - Clicking Sign In button
-2026-04-18 09:10:00 INFO  TC003_SigninNegativeTest:176 - NEG-003 test passed - Signin correctly failed with both invalid credentials
-2026-04-18 09:10:00 INFO  TC003_SigninNegativeTest:183 - ***** Finished NEG-003: Verify signin fails with both invalid credentials *****
-2026-04-18 09:10:00 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
-2026-04-18 09:10:00 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
-2026-04-18 09:10:00 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
-2026-04-18 09:10:00 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
-2026-04-18 09:10:00 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_empty_username
-2026-04-18 09:10:00 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
-2026-04-18 09:10:05 INFO  TC003_SigninNegativeTest:195 - ***** Starting NEG-004: Verify signin fails with empty username *****
-2026-04-18 09:10:05 INFO  TC003_SigninNegativeTest:204 - Leaving username field empty
-2026-04-18 09:10:05 INFO  TC003_SigninNegativeTest:207 - Entering valid password
-2026-04-18 09:10:05 INFO  TC003_SigninNegativeTest:211 - Clicking Sign In button
-2026-04-18 09:11:09 INFO  TC003_SigninNegativeTest:232 - NEG-004 test passed - Signin correctly failed with empty username
-2026-04-18 09:11:09 INFO  TC003_SigninNegativeTest:239 - ***** Finished NEG-004: Verify signin fails with empty username *****
-2026-04-18 09:11:09 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
-2026-04-18 09:11:09 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
-2026-04-18 09:11:09 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
-2026-04-18 09:11:09 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
-2026-04-18 09:11:09 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_empty_password
-2026-04-18 09:11:09 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
-2026-04-18 09:11:15 INFO  TC003_SigninNegativeTest:251 - ***** Starting NEG-005: Verify signin fails with empty password *****
-2026-04-18 09:11:15 INFO  TC003_SigninNegativeTest:260 - Entering valid username: admin
-2026-04-18 09:11:15 INFO  TC003_SigninNegativeTest:264 - Leaving password field empty
-2026-04-18 09:11:15 INFO  TC003_SigninNegativeTest:267 - Clicking Sign In button
-2026-04-18 09:12:18 INFO  TC003_SigninNegativeTest:288 - NEG-005 test passed - Signin correctly failed with empty password
-2026-04-18 09:12:18 INFO  TC003_SigninNegativeTest:295 - ***** Finished NEG-005: Verify signin fails with empty password *****
-2026-04-18 09:12:18 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
-2026-04-18 09:12:18 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
-2026-04-18 09:12:18 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
-2026-04-18 09:12:19 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
-2026-04-18 09:12:19 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_both_fields_empty
-2026-04-18 09:12:19 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
-2026-04-18 09:12:24 INFO  TC003_SigninNegativeTest:307 - ***** Starting NEG-006: Verify signin fails with both fields empty *****
-2026-04-18 09:12:24 INFO  TC003_SigninNegativeTest:316 - Leaving both username and password fields empty
-2026-04-18 09:12:24 INFO  TC003_SigninNegativeTest:319 - Clicking Sign In button
+2026-04-18 09:13:27 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
+2026-04-18 09:13:27 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
+2026-04-18 09:13:27 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
+2026-04-18 09:13:27 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
+2026-04-18 09:13:27 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_sql_injection_in_username
+2026-04-18 09:13:27 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
+2026-04-18 09:13:34 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
+2026-04-18 09:13:34 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
+2026-04-18 09:13:34 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
+2026-04-18 09:13:34 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
+2026-04-18 09:13:34 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_xss_attempt_in_username
+2026-04-18 09:13:34 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
+2026-04-18 09:13:40 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
+2026-04-18 09:13:40 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
+2026-04-18 09:13:40 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
+2026-04-18 09:13:40 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
+2026-04-18 09:13:40 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_very_long_username
+2026-04-18 09:13:40 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
+2026-04-18 09:13:45 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
+2026-04-18 09:13:45 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
+2026-04-18 09:13:45 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
+2026-04-18 09:13:45 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
+2026-04-18 09:13:45 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_username_containing_only_spaces
+2026-04-18 09:13:45 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
+2026-04-18 09:13:50 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
+2026-04-18 09:13:50 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
+2026-04-18 09:13:50 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
+2026-04-18 09:13:50 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
+2026-04-18 09:13:50 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_case_sensitive_password_mismatch
+2026-04-18 09:13:50 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
+2026-04-18 09:13:55 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
+2026-04-18 09:13:55 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
+2026-04-18 09:13:56 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
+2026-04-18 09:13:56 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
+2026-04-18 09:13:56 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_invalid_password_format
+2026-04-18 09:13:56 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
+2026-04-18 09:14:01 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
+2026-04-18 09:14:01 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
+2026-04-18 09:14:01 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
+2026-04-18 09:14:01 INFO  TC002_SigninPositiveTest:366 - All tests completed. All driver sessions closed.
