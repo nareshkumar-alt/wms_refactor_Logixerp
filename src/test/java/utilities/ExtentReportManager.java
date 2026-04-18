@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 import org.testng.ITestContext;
+import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -18,7 +19,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import testBase.BaseClass;
 
-public class ExtentReportManager {
+public class ExtentReportManager implements ITestListener {
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
@@ -34,7 +35,8 @@ public class ExtentReportManager {
 		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";
-		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
+		// Use File.separator for cross-platform compatibility (works on both Windows and Linux)
+		sparkReporter = new ExtentSparkReporter(".//reports//" + repName);// specify location of the report
 
 		sparkReporter.config().setDocumentTitle("opencart Automation Report"); // Title of report
 		sparkReporter.config().setReportName("opencart Functional Testing"); // name of the report
@@ -68,15 +70,19 @@ public class ExtentReportManager {
 		
 	}
 
-	public void onTestFailure(ITestResult result) throws IOException {
+	public void onTestFailure(ITestResult result) {
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups());
 		
 		test.log(Status.FAIL,result.getName()+" got failed");
 		test.log(Status.INFO, result.getThrowable().getMessage());
 		
-		String imgPath = new BaseClass().captureScreen(result.getName());
-		test.addScreenCaptureFromPath(imgPath);
+		try {
+			String imgPath = new BaseClass().captureScreen(result.getName());
+			test.addScreenCaptureFromPath(imgPath);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -90,7 +96,8 @@ public class ExtentReportManager {
 		
 		extent.flush();
 		
-		String pathOfExtentReport = System.getProperty("user.dir")+"\\reports\\"+repName;
+		// Use File.separator for cross-platform compatibility (works on both Windows and Linux)
+		String pathOfExtentReport = System.getProperty("user.dir")+"/reports/"+repName;
 		File extentReport = new File(pathOfExtentReport);
 		
 		try {

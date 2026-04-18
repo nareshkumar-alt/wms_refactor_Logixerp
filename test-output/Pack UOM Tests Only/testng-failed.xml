@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Pack UOM Tests Only]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Pack UOM Module Tests(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC016_SearchFunctionalityTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="tearDown"/>
+          <include name="verify_search_functionality"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC016_SearchFunctionalityTest -->
+      <class name="testCases.TC011_DuplicateConfigTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="tearDown"/>
+          <include name="verify_duplicate_config_name_validation"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC011_DuplicateConfigTest -->
+      <class name="testCases.TC017_ProductMasterIntegrationTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verify_product_master_integration"/>
+        </methods>
+      </class> <!-- testCases.TC017_ProductMasterIntegrationTest -->
+      <class name="testCases.TC009_PackConfigCreateTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="tearDown"/>
+          <include name="verify_pack_config_creation_with_mandatory_fields"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC009_PackConfigCreateTest -->
+      <class name="testCases.TC015_InactiveBlockedTest">
+        <methods>
+          <include name="verify_inactive_blocked_with_active_product"/>
+          <include name="closeDriver"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC015_InactiveBlockedTest -->
+      <class name="testCases.TC012_EditAllowedTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verify_edit_allowed_without_active_stock"/>
+        </methods>
+      </class> <!-- testCases.TC012_EditAllowedTest -->
+      <class name="testCases.TC010_VolumeCalculationTest">
+        <methods>
+          <include name="verify_auto_volume_calculation"/>
+          <include name="closeDriver"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC010_VolumeCalculationTest -->
+      <class name="testCases.TC014_InactiveConfigTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verify_inactive_config_success"/>
+        </methods>
+      </class> <!-- testCases.TC014_InactiveConfigTest -->
+      <class name="testCases.TC013_EditBlockedTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verify_edit_blocked_with_active_stock"/>
+        </methods>
+      </class> <!-- testCases.TC013_EditBlockedTest -->
+    </classes>
+  </test> <!-- Pack UOM Module Tests(failed) -->
+</suite> <!-- Failed suite [Pack UOM Tests Only] -->

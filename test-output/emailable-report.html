@@ -8,65 +8,27 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">156</td><td></td><td></td></tr>
+<tr><th colspan="8">WMS Test Suite</th></tr>
+<tr><td><a href="#t0">WMS Regression Tests</a></td><td class="num">17</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">767,285</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC001_SigninTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1763399969994</td><td rowspan="1">-1763399969994</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">testCases.TC001_SigninTest</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1763399970097</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testCases.TC001_SigninTest</td><td><a href="#m2">verify_account_signin</a></td><td rowspan="1">1763399970079</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">WMS Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">WMS Regression Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">testCases.TC002_SigninPositiveTest</td><td><a href="#m0">verify_signin_button_enabled_when_fields_filled</a></td><td rowspan="1">1776057961700</td><td rowspan="1">8526</td></tr><tr class="passedeven"><td><a href="#m1">verify_signin_with_alphanumeric_username</a></td><td rowspan="1">1776057933975</td><td rowspan="1">9501</td></tr><tr class="passedeven"><td><a href="#m2">verify_signin_with_minimum_length_password</a></td><td rowspan="1">1776057948941</td><td rowspan="1">7060</td></tr><tr class="passedeven"><td><a href="#m3">verify_successful_signin_and_user_session</a></td><td rowspan="1">1776057978900</td><td rowspan="1">11646</td></tr><tr class="passedeven"><td><a href="#m4">verify_successful_signin_with_valid_credentials</a></td><td rowspan="1">1776057921480</td><td rowspan="1">7106</td></tr><tr class="passedodd"><td rowspan="12">testCases.TC003_SigninNegativeTest</td><td><a href="#m5">verify_signin_fails_with_both_fields_empty</a></td><td rowspan="1">1776058347869</td><td rowspan="1">63623</td></tr><tr class="passedodd"><td><a href="#m6">verify_signin_fails_with_both_invalid_credentials</a></td><td rowspan="1">1776058139024</td><td rowspan="1">64368</td></tr><tr class="passedodd"><td><a href="#m7">verify_signin_fails_with_case_sensitive_password_mismatch</a></td><td rowspan="1">1776058605707</td><td rowspan="1">33096</td></tr><tr class="passedodd"><td><a href="#m8">verify_signin_fails_with_empty_password</a></td><td rowspan="1">1776058278953</td><td rowspan="1">63704</td></tr><tr class="passedodd"><td><a href="#m9">verify_signin_fails_with_empty_username</a></td><td rowspan="1">1776058209448</td><td rowspan="1">63752</td></tr><tr class="passedodd"><td><a href="#m10">verify_signin_fails_with_invalid_password</a></td><td rowspan="1">1776058067091</td><td rowspan="1">65290</td></tr><tr class="passedodd"><td><a href="#m11">verify_signin_fails_with_invalid_password_format</a></td><td rowspan="1">1776058645990</td><td rowspan="1">34168</td></tr><tr class="passedodd"><td><a href="#m12">verify_signin_fails_with_invalid_username</a></td><td rowspan="1">1776057995933</td><td rowspan="1">64862</td></tr><tr class="passedodd"><td><a href="#m13">verify_signin_fails_with_sql_injection_in_username</a></td><td rowspan="1">1776058417152</td><td rowspan="1">33084</td></tr><tr class="passedodd"><td><a href="#m14">verify_signin_fails_with_username_containing_only_spaces</a></td><td rowspan="1">1776058536569</td><td rowspan="1">63793</td></tr><tr class="passedodd"><td><a href="#m15">verify_signin_fails_with_very_long_username</a></td><td rowspan="1">1776058527563</td><td rowspan="1">3466</td></tr><tr class="passedodd"><td><a href="#m16">verify_signin_fails_with_xss_attempt_in_username</a></td><td rowspan="1">1776058455714</td><td rowspan="1">33172</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testCases.TC001_SigninTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\My\AppData\Local\Temp\testng-eclipse-1751520021\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:264)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.TC001_SigninTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCases.TC001_SigninTest#verify_account_signin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\My\AppData\Local\Temp\testng-eclipse-1751520021\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:264)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>WMS Regression Tests</h2><h3 id="m0">testCases.TC002_SigninPositiveTest#verify_signin_button_enabled_when_fields_filled</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.TC002_SigninPositiveTest#verify_signin_with_alphanumeric_username</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.TC002_SigninPositiveTest#verify_signin_with_minimum_length_password</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.TC002_SigninPositiveTest#verify_successful_signin_and_user_session</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCases.TC002_SigninPositiveTest#verify_successful_signin_with_valid_credentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_both_fields_empty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_both_invalid_credentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_case_sensitive_password_mismatch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_empty_password</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_empty_username</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_invalid_password</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_invalid_password_format</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_invalid_username</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_sql_injection_in_username</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_username_containing_only_spaces</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_very_long_username</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">testCases.TC003_SigninNegativeTest#verify_signin_fails_with_xss_attempt_in_username</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

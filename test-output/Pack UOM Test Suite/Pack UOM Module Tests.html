@@ -1,0 +1,791 @@
+<html>
+<head>
+<title>TestNG:  Pack UOM Module Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Pack UOM Module Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/9</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 10 19:19:42 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (105 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC011_DuplicateConfigTest.setup()'><b>setup</b><br>Test class: testCases.TC011_DuplicateConfigTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace201677908", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace201677908'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1765374582</td>
+<td>testCases.TC011_DuplicateConfigTest@10cf09e8</td></tr>
+<tr>
+<td title='testCases.TC016_SearchFunctionalityTest.setup()'><b>setup</b><br>Test class: testCases.TC016_SearchFunctionalityTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace896138248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace896138248'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1765374582</td>
+<td>testCases.TC016_SearchFunctionalityTest@6bca7e0d</td></tr>
+<tr>
+<td title='testCases.TC009_PackConfigCreateTest.setup()'><b>setup</b><br>Test class: testCases.TC009_PackConfigCreateTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1914108708", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1914108708'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1765374582</td>
+<td>testCases.TC009_PackConfigCreateTest@31dadd46</td></tr>
+<tr>
+<td title='testCases.TC017_ProductMasterIntegrationTest.setup()'><b>setup</b><br>Test class: testCases.TC017_ProductMasterIntegrationTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2101527076", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2101527076'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1765374582</td>
+<td>testCases.TC017_ProductMasterIntegrationTest@2631f68c</td></tr>
+<tr>
+<td title='testCases.TC014_InactiveConfigTest.setup()'><b>setup</b><br>Test class: testCases.TC014_InactiveConfigTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1016856028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1016856028'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1765374582</td>
+<td>testCases.TC014_InactiveConfigTest@177bea38</td></tr>
+<tr>
+<td title='testCases.TC013_EditBlockedTest.setup()'><b>setup</b><br>Test class: testCases.TC013_EditBlockedTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace125644421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace125644421'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1765374582</td>
+<td>testCases.TC013_EditBlockedTest@ee86bcb</td></tr>
+<tr>
+<td title='testCases.TC010_VolumeCalculationTest.setup()'><b>setup</b><br>Test class: testCases.TC010_VolumeCalculationTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace553759818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace553759818'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1765374582</td>
+<td>testCases.TC010_VolumeCalculationTest@40db2a24</td></tr>
+<tr>
+<td title='testCases.TC012_EditAllowedTest.setup()'><b>setup</b><br>Test class: testCases.TC012_EditAllowedTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1700721442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1700721442'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1765374582</td>
+<td>testCases.TC012_EditAllowedTest@1921ad94</td></tr>
+<tr>
+<td title='testCases.TC015_InactiveBlockedTest.setup()'><b>setup</b><br>Test class: testCases.TC015_InactiveBlockedTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1424108509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1424108509'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1765374582</td>
+<td>testCases.TC015_InactiveBlockedTest@7f132176</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC011_DuplicateConfigTest.tearDown()'><b>tearDown</b><br>Test class: testCases.TC011_DuplicateConfigTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC011_DuplicateConfigTest@10cf09e8</td></tr>
+<tr>
+<td title='testCases.TC012_EditAllowedTest.tearDown()'><b>tearDown</b><br>Test class: testCases.TC012_EditAllowedTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC012_EditAllowedTest@1921ad94</td></tr>
+<tr>
+<td title='testCases.TC016_SearchFunctionalityTest.tearDown()'><b>tearDown</b><br>Test class: testCases.TC016_SearchFunctionalityTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC016_SearchFunctionalityTest@6bca7e0d</td></tr>
+<tr>
+<td title='testCases.TC013_EditBlockedTest.tearDown()'><b>tearDown</b><br>Test class: testCases.TC013_EditBlockedTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC013_EditBlockedTest@ee86bcb</td></tr>
+<tr>
+<td title='testCases.TC017_ProductMasterIntegrationTest.tearDown()'><b>tearDown</b><br>Test class: testCases.TC017_ProductMasterIntegrationTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC017_ProductMasterIntegrationTest@2631f68c</td></tr>
+<tr>
+<td title='testCases.TC010_VolumeCalculationTest.tearDown()'><b>tearDown</b><br>Test class: testCases.TC010_VolumeCalculationTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC010_VolumeCalculationTest@40db2a24</td></tr>
+<tr>
+<td title='testCases.TC009_PackConfigCreateTest.tearDown()'><b>tearDown</b><br>Test class: testCases.TC009_PackConfigCreateTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC009_PackConfigCreateTest@31dadd46</td></tr>
+<tr>
+<td title='testCases.TC014_InactiveConfigTest.tearDown()'><b>tearDown</b><br>Test class: testCases.TC014_InactiveConfigTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC014_InactiveConfigTest@177bea38</td></tr>
+<tr>
+<td title='testCases.TC015_InactiveBlockedTest.tearDown()'><b>tearDown</b><br>Test class: testCases.TC015_InactiveBlockedTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC015_InactiveBlockedTest@7f132176</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC015_InactiveBlockedTest.verify_inactive_blocked_with_active_product()'><b>verify_inactive_blocked_with_active_product</b><br>Test class: testCases.TC015_InactiveBlockedTest<br>Test method: TC-07: Inactive Blocked (Active Product Linked) - Should show error</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1003755748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1003755748'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC015_InactiveBlockedTest@7f132176</td></tr>
+<tr>
+<td title='testCases.TC009_PackConfigCreateTest.verify_pack_config_creation_with_mandatory_fields()'><b>verify_pack_config_creation_with_mandatory_fields</b><br>Test class: testCases.TC009_PackConfigCreateTest<br>Test method: TC-01: Create Pack Configuration - Validate mandatory fields and save</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace204322447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace204322447'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC009_PackConfigCreateTest@31dadd46</td></tr>
+<tr>
+<td title='testCases.TC013_EditBlockedTest.verify_edit_blocked_with_active_stock()'><b>verify_edit_blocked_with_active_stock</b><br>Test class: testCases.TC013_EditBlockedTest<br>Test method: TC-05: Edit Blocked (Active Stock Exists) - System should block with message</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1053632127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1053632127'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC013_EditBlockedTest@ee86bcb</td></tr>
+<tr>
+<td title='testCases.TC012_EditAllowedTest.verify_edit_allowed_without_active_stock()'><b>verify_edit_allowed_without_active_stock</b><br>Test class: testCases.TC012_EditAllowedTest<br>Test method: TC-04: Edit Allowed (No Active Stock) - Edit should be successful</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2116511124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2116511124'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC012_EditAllowedTest@1921ad94</td></tr>
+<tr>
+<td title='testCases.TC010_VolumeCalculationTest.verify_auto_volume_calculation()'><b>verify_auto_volume_calculation</b><br>Test class: testCases.TC010_VolumeCalculationTest<br>Test method: TC-02: Validate Auto Volume Calculation - Enter L, B, H and verify volume</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace751021317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace751021317'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC010_VolumeCalculationTest@40db2a24</td></tr>
+<tr>
+<td title='testCases.TC014_InactiveConfigTest.verify_inactive_config_success()'><b>verify_inactive_config_success</b><br>Test class: testCases.TC014_InactiveConfigTest<br>Test method: TC-06: Inactive Config - Should be successful</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace446445803", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace446445803'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC014_InactiveConfigTest@177bea38</td></tr>
+<tr>
+<td title='testCases.TC017_ProductMasterIntegrationTest.verify_product_master_integration()'><b>verify_product_master_integration</b><br>Test class: testCases.TC017_ProductMasterIntegrationTest<br>Test method: TC-09: Product Master Integration - Select Pack Config and verify auto-fill</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1454026445", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1454026445'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC017_ProductMasterIntegrationTest@2631f68c</td></tr>
+<tr>
+<td title='testCases.TC011_DuplicateConfigTest.verify_duplicate_config_name_validation()'><b>verify_duplicate_config_name_validation</b><br>Test class: testCases.TC011_DuplicateConfigTest<br>Test method: TC-03: Duplicate Configuration Name - System must show error</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace635611994", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace635611994'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC011_DuplicateConfigTest@10cf09e8</td></tr>
+<tr>
+<td title='testCases.TC016_SearchFunctionalityTest.verify_search_functionality()'><b>verify_search_functionality</b><br>Test class: testCases.TC016_SearchFunctionalityTest<br>Test method: TC-08: Search Functionality - Apply filters and verify correct list</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace548482954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace548482954'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in /home/user1/Downloads/WMS_Refactor_3_6_9_logixgrid/packuom_test_suite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC016_SearchFunctionalityTest@6bca7e0d</td></tr>
+</table><p>
+</body>
+</html>

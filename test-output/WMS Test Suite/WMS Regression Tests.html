@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>TestNG:  WMS Regression Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>WMS Regression Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 13 10:55:12 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>767 seconds (767285 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_both_fields_empty()'><b>verify_signin_fails_with_both_fields_empty</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-006: Verify signin fails with both fields empty</td>
+<td></td>
+<td>63</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_xss_attempt_in_username()'><b>verify_signin_fails_with_xss_attempt_in_username</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-008: Verify signin fails with XSS attempt in username</td>
+<td></td>
+<td>33</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+<tr>
+<td title='testCases.TC002_SigninPositiveTest.verify_successful_signin_and_user_session()'><b>verify_successful_signin_and_user_session</b><br>Test class: testCases.TC002_SigninPositiveTest<br>Test method: POS-006: Verify successful signin and user session</td>
+<td></td>
+<td>11</td>
+<td>testCases.TC002_SigninPositiveTest@177bea38</td></tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_both_invalid_credentials()'><b>verify_signin_fails_with_both_invalid_credentials</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-003: Verify signin fails with both invalid username and password</td>
+<td></td>
+<td>64</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+<tr>
+<td title='testCases.TC002_SigninPositiveTest.verify_signin_with_alphanumeric_username()'><b>verify_signin_with_alphanumeric_username</b><br>Test class: testCases.TC002_SigninPositiveTest<br>Test method: POS-002: Verify signin with alphanumeric username</td>
+<td></td>
+<td>9</td>
+<td>testCases.TC002_SigninPositiveTest@177bea38</td></tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_invalid_password()'><b>verify_signin_fails_with_invalid_password</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-002: Verify signin fails with invalid password</td>
+<td></td>
+<td>65</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+<tr>
+<td title='testCases.TC002_SigninPositiveTest.verify_successful_signin_with_valid_credentials()'><b>verify_successful_signin_with_valid_credentials</b><br>Test class: testCases.TC002_SigninPositiveTest<br>Test method: POS-001: Verify successful signin with valid credentials</td>
+<td></td>
+<td>7</td>
+<td>testCases.TC002_SigninPositiveTest@177bea38</td></tr>
+<tr>
+<td title='testCases.TC002_SigninPositiveTest.verify_signin_button_enabled_when_fields_filled()'><b>verify_signin_button_enabled_when_fields_filled</b><br>Test class: testCases.TC002_SigninPositiveTest<br>Test method: POS-005: Verify signin button is enabled when fields are filled</td>
+<td></td>
+<td>8</td>
+<td>testCases.TC002_SigninPositiveTest@177bea38</td></tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_very_long_username()'><b>verify_signin_fails_with_very_long_username</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-009: Verify signin fails with very long username</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+<tr>
+<td title='testCases.TC002_SigninPositiveTest.verify_signin_with_minimum_length_password()'><b>verify_signin_with_minimum_length_password</b><br>Test class: testCases.TC002_SigninPositiveTest<br>Test method: POS-004: Verify signin with minimum length password</td>
+<td></td>
+<td>7</td>
+<td>testCases.TC002_SigninPositiveTest@177bea38</td></tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_invalid_username()'><b>verify_signin_fails_with_invalid_username</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-001: Verify signin fails with invalid username</td>
+<td></td>
+<td>64</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_username_containing_only_spaces()'><b>verify_signin_fails_with_username_containing_only_spaces</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-010: Verify signin fails with username containing only spaces</td>
+<td></td>
+<td>63</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_sql_injection_in_username()'><b>verify_signin_fails_with_sql_injection_in_username</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-007: Verify signin fails with SQL injection attempt in username</td>
+<td></td>
+<td>33</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_invalid_password_format()'><b>verify_signin_fails_with_invalid_password_format</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-012: Verify signin fails with invalid password format</td>
+<td></td>
+<td>34</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_empty_password()'><b>verify_signin_fails_with_empty_password</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-005: Verify signin fails with empty password</td>
+<td></td>
+<td>63</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_empty_username()'><b>verify_signin_fails_with_empty_username</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-004: Verify signin fails with empty username</td>
+<td></td>
+<td>63</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+<tr>
+<td title='testCases.TC003_SigninNegativeTest.verify_signin_fails_with_case_sensitive_password_mismatch()'><b>verify_signin_fails_with_case_sensitive_password_mismatch</b><br>Test class: testCases.TC003_SigninNegativeTest<br>Test method: NEG-011: Verify signin fails with case-sensitive password mismatch</td>
+<td></td>
+<td>33</td>
+<td>testCases.TC003_SigninNegativeTest@30af5b6b</td></tr>
+</table><p>
+</body>
+</html>

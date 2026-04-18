@@ -7,11 +7,20 @@
     <classes>
       <class name="testCases.TC001_SigninTest">
         <methods>
+          <include name="closeDriver"/>
           <include name="tearDown"/>
-          <include name="setup"/>
           <include name="verify_account_signin"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC001_SigninTest -->
+      <class name="testCases.TC004_MultipleZoneFilterTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="tearDown"/>
+          <include name="verifyMultipleZoneFiltering"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC004_MultipleZoneFilterTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

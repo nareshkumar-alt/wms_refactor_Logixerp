@@ -5,9 +5,10 @@
     <classes>
       <class name="testCases.TC001_SigninTest">
         <methods>
+          <include name="closeDriver"/>
           <include name="tearDown"/>
-          <include name="verify_account_signin"/>
           <include name="setup"/>
+          <include name="verify_account_signin"/>
         </methods>
       </class> <!-- testCases.TC001_SigninTest -->
     </classes>
