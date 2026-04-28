@@ -122,152 +122,186 @@ public class BaseClass {
 			logger = LogManager.getLogger(this.getClass());
 		}
 		
-					// Load properties if not already loaded
-					if (p == null) {
-						p = new Properties();
-						try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream("config.properties")) {
-							if (inputStream != null) {
-								p.load(inputStream);
-								logger.info("Loaded config.properties from classpath");
-							} else {
-								try (FileReader file = new FileReader("./src//test//resources//config.properties")) {
-									p.load(file);
-									logger.info("Loaded config.properties from relative path");
-								}
+				// Load properties if not already loaded
+				if (p == null) {
+					p = new Properties();
+					try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream("config.properties")) {
+						if (inputStream != null) {
+							p.load(inputStream);
+							logger.info("Loaded config.properties from classpath");
+						} else {
+							try (FileReader file = new FileReader("./src//test//resources//config.properties")) {
+								p.load(file);
+								logger.info("Loaded config.properties from relative path");
 							}
-						} catch (IOException e) {
-							logger.error("Failed to load config.properties: " + e.getMessage());
 						}
+					} catch (IOException e) {
+						logger.error("Failed to load config.properties: " + e.getMessage());
 					}
-		
+				}
+	
 		// Ensure driver is null before creating new one (in case previous test didn't close properly)
 		if (driver != null) {
-					try {
-				driver.quit();
-					} catch (Exception e) {
-				logger.warn("Previous driver session was not properly closed: " + e.getMessage());
-			}
-			driver = null;
-			}
-			
-			// Suppress Selenium java.util.logging messages
-			java.util.logging.Logger seleniumLogger = java.util.logging.Logger.getLogger("org.openqa.selenium");
-			seleniumLogger.setLevel(java.util.logging.Level.SEVERE);
-			java.util.logging.Logger devtoolsLogger = java.util.logging.Logger.getLogger("org.openqa.selenium.devtools");
-			devtoolsLogger.setLevel(java.util.logging.Level.SEVERE);
-			java.util.logging.Logger tracingLogger = java.util.logging.Logger.getLogger("org.openqa.selenium.remote.tracing");
-			tracingLogger.setLevel(java.util.logging.Level.SEVERE);
-			
-		logger.info("Setting up new driver instance for test execution");
-					
-			if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
-			{
-				org.openqa.selenium.Capabilities capabilities = null;
-				
-				// browser - using modern Selenium 4.x approach
-				switch (browser.toLowerCase()) {
-				    case "chrome":
-				        ChromeOptions chromeOptions = new ChromeOptions();
-				        if(os.equalsIgnoreCase("linux")) {
-				            chromeOptions.setPlatformName("linux");
-				        } else if(os.equalsIgnoreCase("mac")) {
-				            chromeOptions.setPlatformName("mac");
-				        } else {
-				            chromeOptions.setPlatformName("windows");
-				        }
-				        capabilities = chromeOptions;
-				        break;
-
-				    case "edge":
-				        EdgeOptions edgeOptions = new EdgeOptions();
-				        if(os.equalsIgnoreCase("linux")) {
-				            edgeOptions.setPlatformName("linux");
-				        } else if(os.equalsIgnoreCase("mac")) {
-				            edgeOptions.setPlatformName("mac");
-				        } else {
-				            edgeOptions.setPlatformName("windows");
-				        }
-				        capabilities = edgeOptions;
-				        break;
-
-				    case "firefox":
-				        FirefoxOptions firefoxOptions = new FirefoxOptions();
-				        if(os.equalsIgnoreCase("linux")) {
-				            firefoxOptions.setPlatformName("linux");
-				        } else if(os.equalsIgnoreCase("mac")) {
-				            firefoxOptions.setPlatformName("mac");
-				        } else {
-				            firefoxOptions.setPlatformName("windows");
-				        }
-				        capabilities = firefoxOptions;
-				        break;
-
-				    default:
-				        logger.error("No matching browser: " + browser);
-				        return;
-				}
-
-				// Initialize RemoteWebDriver with Selenium Grid hub URL
-				String gridHubURL = p.getProperty("gridHubURL", "http://localhost:4444/wd/hub");
-				boolean fallbackToLocal = Boolean.parseBoolean(p.getProperty("fallbackToLocal", "true"));
-				
 				try {
-					logger.info("Attempting to connect to Selenium Grid at: " + gridHubURL);
-					driver = new RemoteWebDriver(new URL(gridHubURL), capabilities);
-					logger.info("Successfully connected to Selenium Grid");
+			driver.quit();
 				} catch (Exception e) {
-					logger.error("Failed to connect to Selenium Grid at " + gridHubURL + ": " + e.getMessage());
-					if (fallbackToLocal) {
-						logger.warn("Falling back to local execution mode");
-						// Fallback to local execution
-						switch(browser.toLowerCase())
-						{
-						case "chrome" : driver=new ChromeDriver();
-						break;
-						
-						case "edge" : driver=new EdgeDriver();
-						break;
-						case "firefox": driver=new FirefoxDriver();
-						break;
-						default : 
-							logger.error("Invalid browser name: " + browser);
-							return;
-						}
-					} else {
-						logger.error("Remote execution failed and fallback is disabled. Please start Selenium Grid or set fallbackToLocal=true");
-						throw new RuntimeException("Could not connect to Selenium Grid. Please ensure Grid is running at: " + gridHubURL, e);
-					}
-				}
-			}
-			
-					
-			if(p.getProperty("execution_env").equalsIgnoreCase("local"))
-			{
-
-				
-				
-				switch(browser.toLowerCase())
-				{
-				case "chrome" : driver=new ChromeDriver();
-				break;
-				
-				case "edge" : driver=new EdgeDriver();
-				break;
-				case "firefox": driver=new FirefoxDriver();
-				break;
-				default : System.out.println("Invalid browser name..");
-				return;
-				}
-			}
-			
-				
-			// Navigate to application URL (only if driver was just created)
-			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			driver.get(p.getProperty("appURL1")); // reading url from properties file.
-			driver.manage().window().maximize();
+			logger.warn("Previous driver session was not properly closed: " + e.getMessage());
+		}
+		driver = null;
 		}
 		
+		// Suppress Selenium java.util.logging messages
+		java.util.logging.Logger seleniumLogger = java.util.logging.Logger.getLogger("org.openqa.selenium");
+		seleniumLogger.setLevel(java.util.logging.Level.SEVERE);
+		java.util.logging.Logger devtoolsLogger = java.util.logging.Logger.getLogger("org.openqa.selenium.devtools");
+		devtoolsLogger.setLevel(java.util.logging.Level.SEVERE);
+		java.util.logging.Logger tracingLogger = java.util.logging.Logger.getLogger("org.openqa.selenium.remote.tracing");
+		tracingLogger.setLevel(java.util.logging.Level.SEVERE);
+		
+		logger.info("Setting up new driver instance for test execution");
+				
+		if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
+		{
+			org.openqa.selenium.Capabilities capabilities = null;
+			
+			// browser - using modern Selenium 4.x approach
+			switch (browser.toLowerCase()) {
+			    case "chrome":
+			        ChromeOptions chromeOptions = new ChromeOptions();
+			        if(os.equalsIgnoreCase("linux")) {
+			            chromeOptions.setPlatformName("linux");
+			        } else if(os.equalsIgnoreCase("mac")) {
+			            chromeOptions.setPlatformName("mac");
+			        } else {
+			            chromeOptions.setPlatformName("windows");
+			        }
+			        capabilities = chromeOptions;
+			        break;
+
+			    case "edge":
+			        EdgeOptions edgeOptions = new EdgeOptions();
+			        if(os.equalsIgnoreCase("linux")) {
+			            edgeOptions.setPlatformName("linux");
+			        } else if(os.equalsIgnoreCase("mac")) {
+			            edgeOptions.setPlatformName("mac");
+			        } else {
+			            edgeOptions.setPlatformName("windows");
+			        }
+			        capabilities = edgeOptions;
+			        break;
+
+			    case "firefox":
+			        FirefoxOptions firefoxOptions = new FirefoxOptions();
+			        if(os.equalsIgnoreCase("linux")) {
+			            firefoxOptions.setPlatformName("linux");
+			        } else if(os.equalsIgnoreCase("mac")) {
+			            firefoxOptions.setPlatformName("mac");
+			        } else {
+			            firefoxOptions.setPlatformName("windows");
+			        }
+			        capabilities = firefoxOptions;
+			        break;
+
+			    default:
+			        logger.error("No matching browser: " + browser);
+			        return;
+			}
+
+			// Initialize RemoteWebDriver with Selenium Grid hub URL
+			String gridHubURL = p.getProperty("gridHubURL", "http://localhost:4444/wd/hub");
+			boolean fallbackToLocal = Boolean.parseBoolean(p.getProperty("fallbackToLocal", "true"));
+			
+			try {
+				logger.info("Attempting to connect to Selenium Grid at: " + gridHubURL);
+				driver = new RemoteWebDriver(new URL(gridHubURL), capabilities);
+				logger.info("Successfully connected to Selenium Grid");
+			} catch (Exception e) {
+				logger.error("Failed to connect to Selenium Grid at " + gridHubURL + ": " + e.getMessage());
+				if (fallbackToLocal) {
+					logger.warn("Falling back to local execution mode");
+					// Fallback to local execution
+					switch(browser.toLowerCase())
+					{
+					case "chrome" : driver=new ChromeDriver();
+					break;
+					
+					case "edge" : driver=new EdgeDriver();
+					break;
+					case "firefox": driver=new FirefoxDriver();
+					break;
+					default : 
+						logger.error("Invalid browser name: " + browser);
+						return;
+					}
+				} else {
+					logger.error("Remote execution failed and fallback is disabled. Please start Selenium Grid or set fallbackToLocal=true");
+					throw new RuntimeException("Could not connect to Selenium Grid. Please ensure Grid is running at: " + gridHubURL, e);
+				}
+			}
+		}
+		
+		// ✅ LOCAL SECTION — Docker/Headless support added
+		if(p.getProperty("execution_env").equalsIgnoreCase("local"))
+		{
+			switch(browser.toLowerCase())
+			{
+			case "chrome":
+				ChromeOptions localChromeOptions = new ChromeOptions();
+				// Docker/Headless environment check
+				if(System.getenv("DOCKER_ENV") != null || 
+				   p.getProperty("headless", "false").equalsIgnoreCase("true")) {
+					localChromeOptions.addArguments("--headless");
+					localChromeOptions.addArguments("--no-sandbox");
+					localChromeOptions.addArguments("--disable-dev-shm-usage");
+					localChromeOptions.addArguments("--disable-gpu");
+					localChromeOptions.addArguments("--window-size=1920,1080");
+					localChromeOptions.addArguments("--remote-debugging-port=9222");
+					logger.info("Running Chrome in HEADLESS mode (Docker environment)");
+				} else {
+					logger.info("Running Chrome in NORMAL mode (Local environment)");
+				}
+				driver = new ChromeDriver(localChromeOptions);
+				break;
+
+			case "edge":
+				EdgeOptions localEdgeOptions = new EdgeOptions();
+				if(System.getenv("DOCKER_ENV") != null || 
+				   p.getProperty("headless", "false").equalsIgnoreCase("true")) {
+					localEdgeOptions.addArguments("--headless");
+					localEdgeOptions.addArguments("--no-sandbox");
+					localEdgeOptions.addArguments("--disable-dev-shm-usage");
+					logger.info("Running Edge in HEADLESS mode");
+				} else {
+					logger.info("Running Edge in NORMAL mode (Local environment)");
+				}
+				driver = new EdgeDriver(localEdgeOptions);
+				break;
+
+			case "firefox":
+				FirefoxOptions localFirefoxOptions = new FirefoxOptions();
+				if(System.getenv("DOCKER_ENV") != null || 
+				   p.getProperty("headless", "false").equalsIgnoreCase("true")) {
+					localFirefoxOptions.addArguments("--headless");
+					logger.info("Running Firefox in HEADLESS mode");
+				} else {
+					logger.info("Running Firefox in NORMAL mode (Local environment)");
+				}
+				driver = new FirefoxDriver(localFirefoxOptions);
+				break;
+
+			default:
+				logger.error("Invalid browser name: " + browser);
+				return;
+			}
+		}
+		
+		// Navigate to application URL (only if driver was just created)
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get(p.getProperty("appURL1")); // reading url from properties file.
+		driver.manage().window().maximize();
+	}
+	
 	/**
 	 * Teardown method that runs after each test method
 	 * Closes and quits the driver after every test case execution
@@ -288,8 +322,6 @@ public class BaseClass {
 				
 				if (videoPath != null) {
 					logger.info("Video recording stopped and saved: " + videoPath);
-					// Optionally attach video to ExtentReport if needed
-					// You can add this integration later if using ExtentReports
 				} else if (recordOnlyOnFailure && testPassed) {
 					logger.info("Video recording stopped and deleted (test passed, recordOnlyOnFailure=true)");
 				} else {
@@ -311,7 +343,6 @@ public class BaseClass {
 				logger.info("Driver closed successfully after test case");
 			} catch (Exception e) {
 				logger.warn("Error closing driver after test case: " + e.getMessage());
-				// Try to set driver to null even if quit fails
 				driver = null;
 			}
 		} else {
@@ -342,63 +373,61 @@ public class BaseClass {
 			}
 		}
 		logger.info("Test class completed. All driver sessions closed.");
-		}
-		
+	}
+	
 	/**
 	 * Cleanup method that runs after all test suites
 	 * Final safety net to ensure no driver instances remain
 	 */
-		@AfterSuite(groups= {"Sanity","Regression","Master"})
-		public void closeDriver()
-		{
+	@AfterSuite(groups= {"Sanity","Regression","Master"})
+	public void closeDriver()
+	{
 		// Final cleanup - ensure no driver instances remain after all tests
-			if (driver != null) {
-				try {
+		if (driver != null) {
+			try {
 				logger.info("Final suite cleanup: Closing any remaining driver instances");
-					driver.quit();
-					driver = null;
+				driver.quit();
+				driver = null;
 				logger.info("All driver sessions closed successfully after test suite");
-				} catch (Exception e) {
+			} catch (Exception e) {
 				logger.warn("Error closing driver in AfterSuite: " + e.getMessage());
 				driver = null;
 			}
 		}
 		logger.info("All tests completed. All driver sessions closed.");
-		}
-		
-		public String randomeString()
-		{
-			String generatedstring=RandomStringUtils.randomAlphabetic(5);
-			return generatedstring;
-		}
-		
-		public String randomeNumber()
-		{
-			String generatednumber=RandomStringUtils.randomNumeric(10);
-			return generatednumber;
-		}
-		
-		public String randomeAlphaNumberic()
-		{
-			String generatedstring=RandomStringUtils.randomAlphabetic(3);
-			String generatednumber=RandomStringUtils.randomNumeric(3);
-			return (generatedstring+"@"+generatednumber);
-		}
-		
-		public String captureScreen(String tname) throws IOException {
+	}
+	
+	public String randomeString()
+	{
+		String generatedstring=RandomStringUtils.randomAlphabetic(5);
+		return generatedstring;
+	}
+	
+	public String randomeNumber()
+	{
+		String generatednumber=RandomStringUtils.randomNumeric(10);
+		return generatednumber;
+	}
+	
+	public String randomeAlphaNumberic()
+	{
+		String generatedstring=RandomStringUtils.randomAlphabetic(3);
+		String generatednumber=RandomStringUtils.randomNumeric(3);
+		return (generatedstring+"@"+generatednumber);
+	}
+	
+	public String captureScreen(String tname) throws IOException {
 
-			String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-					
-			TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-			File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-			
-			String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".png";
-			File targetFile=new File(targetFilePath);
-			
-			sourceFile.renameTo(targetFile);
+		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 				
-			return targetFilePath;
-
-		}
+		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		
+		String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".png";
+		File targetFile=new File(targetFilePath);
+		
+		sourceFile.renameTo(targetFile);
+			
+		return targetFilePath;
+	}
 }
