@@ -1,40 +1,8 @@
-2026-04-18 09:13:27 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
-2026-04-18 09:13:27 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
-2026-04-18 09:13:27 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
-2026-04-18 09:13:27 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
-2026-04-18 09:13:27 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_sql_injection_in_username
-2026-04-18 09:13:27 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
-2026-04-18 09:13:34 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
-2026-04-18 09:13:34 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
-2026-04-18 09:13:34 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
-2026-04-18 09:13:34 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
-2026-04-18 09:13:34 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_xss_attempt_in_username
-2026-04-18 09:13:34 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
-2026-04-18 09:13:40 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
-2026-04-18 09:13:40 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
-2026-04-18 09:13:40 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
-2026-04-18 09:13:40 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
-2026-04-18 09:13:40 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_very_long_username
-2026-04-18 09:13:40 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
-2026-04-18 09:13:45 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
-2026-04-18 09:13:45 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
-2026-04-18 09:13:45 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
-2026-04-18 09:13:45 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
-2026-04-18 09:13:45 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_username_containing_only_spaces
-2026-04-18 09:13:45 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
-2026-04-18 09:13:50 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
-2026-04-18 09:13:50 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
-2026-04-18 09:13:50 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
-2026-04-18 09:13:50 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
-2026-04-18 09:13:50 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_case_sensitive_password_mismatch
-2026-04-18 09:13:50 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
-2026-04-18 09:13:55 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
-2026-04-18 09:13:55 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
-2026-04-18 09:13:56 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
-2026-04-18 09:13:56 WARN  VideoRecorder:83 - Video recording skipped - Monte Media Library not available
-2026-04-18 09:13:56 WARN  TC003_SigninNegativeTest:114 - Failed to start video recording for test method: verify_signin_fails_with_invalid_password_format
-2026-04-18 09:13:56 INFO  TC003_SigninNegativeTest:161 - Setting up new driver instance for test execution
-2026-04-18 09:14:01 WARN  TC003_SigninNegativeTest:296 - Video recording stopped but file path is null
-2026-04-18 09:14:01 INFO  TC003_SigninNegativeTest:308 - Closing driver after test case execution
-2026-04-18 09:14:01 INFO  TC003_SigninNegativeTest:311 - Driver closed successfully after test case
-2026-04-18 09:14:01 INFO  TC002_SigninPositiveTest:366 - All tests completed. All driver sessions closed.
+2026-04-21 18:11:07 INFO  ProductPage:262 - Starting navigation to Product module
+2026-04-21 18:11:07 INFO  ProductPage:247 - Clicked on Master Data menu
+2026-04-21 18:11:39 ERROR TC050_BackorderRuleTest:117 - Test failed with exception: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[normalize-space()='Product']' (tried for 15 second(s) with 500 milliseconds interval)
+2026-04-21 18:11:39 WARN  TC050_BackorderRuleTest:296 - Video recording stopped but file path is null
+2026-04-21 18:11:39 INFO  TC050_BackorderRuleTest:308 - Closing driver after test case execution
+2026-04-21 18:11:40 INFO  TC050_BackorderRuleTest:311 - Driver closed successfully after test case
+2026-04-21 18:11:40 INFO  TC050_BackorderRuleTest:344 - Test class completed. All driver sessions closed.
+2026-04-21 18:11:40 INFO  TC050_BackorderRuleTest:366 - All tests completed. All driver sessions closed.

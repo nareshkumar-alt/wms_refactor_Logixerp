@@ -1,59 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-13T10:55:12 IST" name="WMS Test Suite" finished-at="2026-04-13T11:08:00 IST" duration-ms="767285">
+  <suite started-at="2026-04-21T18:10:41 IST" name="Backorder Test Suite" finished-at="2026-04-21T18:11:40 IST" duration-ms="58722">
     <groups>
-      <group name="Sanity">
-        <method signature="TC002_SigninPositiveTest.verify_successful_signin_with_valid_credentials()[pri:1, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_successful_signin_with_valid_credentials" class="testCases.TC002_SigninPositiveTest"/>
-        <method signature="TC002_SigninPositiveTest.verify_successful_signin_and_user_session()[pri:6, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_successful_signin_and_user_session" class="testCases.TC002_SigninPositiveTest"/>
-      </group> <!-- Sanity -->
-      <group name="Negative">
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_invalid_username()[pri:1, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_invalid_username" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_invalid_password()[pri:2, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_invalid_password" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_both_invalid_credentials()[pri:3, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_both_invalid_credentials" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_empty_username()[pri:4, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_empty_username" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_empty_password()[pri:5, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_empty_password" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_both_fields_empty()[pri:6, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_both_fields_empty" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_sql_injection_in_username()[pri:7, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_sql_injection_in_username" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_xss_attempt_in_username()[pri:8, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_xss_attempt_in_username" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_very_long_username()[pri:9, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_very_long_username" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_username_containing_only_spaces()[pri:10, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_username_containing_only_spaces" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_case_sensitive_password_mismatch()[pri:11, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_case_sensitive_password_mismatch" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_invalid_password_format()[pri:12, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_invalid_password_format" class="testCases.TC003_SigninNegativeTest"/>
-      </group> <!-- Negative -->
-      <group name="Positive">
-        <method signature="TC002_SigninPositiveTest.verify_successful_signin_with_valid_credentials()[pri:1, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_successful_signin_with_valid_credentials" class="testCases.TC002_SigninPositiveTest"/>
-        <method signature="TC002_SigninPositiveTest.verify_signin_with_alphanumeric_username()[pri:2, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_signin_with_alphanumeric_username" class="testCases.TC002_SigninPositiveTest"/>
-        <method signature="TC002_SigninPositiveTest.verify_signin_with_minimum_length_password()[pri:4, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_signin_with_minimum_length_password" class="testCases.TC002_SigninPositiveTest"/>
-        <method signature="TC002_SigninPositiveTest.verify_signin_button_enabled_when_fields_filled()[pri:5, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_signin_button_enabled_when_fields_filled" class="testCases.TC002_SigninPositiveTest"/>
-        <method signature="TC002_SigninPositiveTest.verify_successful_signin_and_user_session()[pri:6, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_successful_signin_and_user_session" class="testCases.TC002_SigninPositiveTest"/>
-      </group> <!-- Positive -->
+      <group name="Master">
+        <method signature="TC050_BackorderRuleTest.verifyBackorderDisabledPutsOrderOnHold()[pri:0, instance:testCases.TC050_BackorderRuleTest@3c9c0d96]" name="verifyBackorderDisabledPutsOrderOnHold" class="testCases.TC050_BackorderRuleTest"/>
+      </group> <!-- Master -->
       <group name="Regression">
-        <method signature="TC002_SigninPositiveTest.verify_successful_signin_with_valid_credentials()[pri:1, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_successful_signin_with_valid_credentials" class="testCases.TC002_SigninPositiveTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_invalid_username()[pri:1, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_invalid_username" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC002_SigninPositiveTest.verify_signin_with_alphanumeric_username()[pri:2, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_signin_with_alphanumeric_username" class="testCases.TC002_SigninPositiveTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_invalid_password()[pri:2, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_invalid_password" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_both_invalid_credentials()[pri:3, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_both_invalid_credentials" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC002_SigninPositiveTest.verify_signin_with_minimum_length_password()[pri:4, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_signin_with_minimum_length_password" class="testCases.TC002_SigninPositiveTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_empty_username()[pri:4, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_empty_username" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC002_SigninPositiveTest.verify_signin_button_enabled_when_fields_filled()[pri:5, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_signin_button_enabled_when_fields_filled" class="testCases.TC002_SigninPositiveTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_empty_password()[pri:5, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_empty_password" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC002_SigninPositiveTest.verify_successful_signin_and_user_session()[pri:6, instance:testCases.TC002_SigninPositiveTest@177bea38]" name="verify_successful_signin_and_user_session" class="testCases.TC002_SigninPositiveTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_both_fields_empty()[pri:6, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_both_fields_empty" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_very_long_username()[pri:9, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_very_long_username" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_username_containing_only_spaces()[pri:10, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_username_containing_only_spaces" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_case_sensitive_password_mismatch()[pri:11, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_case_sensitive_password_mismatch" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_invalid_password_format()[pri:12, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_invalid_password_format" class="testCases.TC003_SigninNegativeTest"/>
+        <method signature="TC050_BackorderRuleTest.verifyBackorderDisabledPutsOrderOnHold()[pri:0, instance:testCases.TC050_BackorderRuleTest@3c9c0d96]" name="verifyBackorderDisabledPutsOrderOnHold" class="testCases.TC050_BackorderRuleTest"/>
       </group> <!-- Regression -->
-      <group name="Security">
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_sql_injection_in_username()[pri:7, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_sql_injection_in_username" class="testCases.TC003_SigninNegativeTest"/>
-        <method signature="TC003_SigninNegativeTest.verify_signin_fails_with_xss_attempt_in_username()[pri:8, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" name="verify_signin_fails_with_xss_attempt_in_username" class="testCases.TC003_SigninNegativeTest"/>
-      </group> <!-- Security -->
     </groups>
-    <test started-at="2026-04-13T10:55:12 IST" name="WMS Regression Tests" finished-at="2026-04-13T11:08:00 IST" duration-ms="767285">
-      <class name="testCases.TC002_SigninPositiveTest">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:55:12 IST" name="setupClass" finished-at="2026-04-13T10:55:13 IST" duration-ms="17" status="PASS">
+    <test started-at="2026-04-21T18:10:41 IST" name="Backorder Regression Tests" finished-at="2026-04-21T18:11:40 IST" duration-ms="58722">
+      <class name="testCases.TC050_BackorderRuleTest">
+        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC050_BackorderRuleTest@3c9c0d96]" started-at="2026-04-21T18:10:41 IST" name="setupClass" finished-at="2026-04-21T18:10:41 IST" duration-ms="18" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:55:13 IST" name="setup" finished-at="2026-04-13T10:55:21 IST" duration-ms="8455" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC050_BackorderRuleTest@3c9c0d96]" started-at="2026-04-21T18:10:41 IST" name="setup" finished-at="2026-04-21T18:10:49 IST" duration-ms="7691" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,635 +43,76 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC002_SigninPositiveTest.verify_successful_signin_with_valid_credentials()[pri:1, instance:testCases.TC002_SigninPositiveTest@177bea38] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TC050_BackorderRuleTest.verifyBackorderDisabledPutsOrderOnHold()[pri:0, instance:testCases.TC050_BackorderRuleTest@3c9c0d96] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_successful_signin_with_valid_credentials()[pri:1, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:55:21 IST" name="verify_successful_signin_with_valid_credentials" description="POS-001: Verify successful signin with valid credentials" finished-at="2026-04-13T10:55:28 IST" duration-ms="7106" status="PASS">
+        <test-method signature="verifyBackorderDisabledPutsOrderOnHold()[pri:0, instance:testCases.TC050_BackorderRuleTest@3c9c0d96]" started-at="2026-04-21T18:10:49 IST" name="verifyBackorderDisabledPutsOrderOnHold" finished-at="2026-04-21T18:11:39 IST" duration-ms="50850" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[normalize-space()='Product']' (tried for 15 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[normalize-space()='Product']' (tried for 15 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:111)
+at testCases.TC050_BackorderRuleTest.verifyBackorderDisabledPutsOrderOnHold(TC050_BackorderRuleTest.java:118)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_successful_signin_with_valid_credentials -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:55:28 IST" name="tearDown" finished-at="2026-04-13T10:55:28 IST" duration-ms="121" status="PASS">
+        </test-method> <!-- verifyBackorderDisabledPutsOrderOnHold -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC050_BackorderRuleTest@3c9c0d96]" started-at="2026-04-21T18:11:39 IST" name="tearDown" finished-at="2026-04-21T18:11:40 IST" duration-ms="117" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_successful_signin_with_valid_credentials status=SUCCESS method=TC002_SigninPositiveTest.verify_successful_signin_with_valid_credentials()[pri:1, instance:testCases.TC002_SigninPositiveTest@177bea38] output={null}]]]>
+                <![CDATA[[TestResult name=verifyBackorderDisabledPutsOrderOnHold status=FAILURE method=TC050_BackorderRuleTest.verifyBackorderDisabledPutsOrderOnHold()[pri:0, instance:testCases.TC050_BackorderRuleTest@3c9c0d96] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:55:28 IST" name="setup" finished-at="2026-04-13T10:55:33 IST" duration-ms="5262" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC002_SigninPositiveTest.verify_signin_with_alphanumeric_username()[pri:2, instance:testCases.TC002_SigninPositiveTest@177bea38] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_with_alphanumeric_username()[pri:2, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:55:33 IST" name="verify_signin_with_alphanumeric_username" description="POS-002: Verify signin with alphanumeric username" finished-at="2026-04-13T10:55:43 IST" duration-ms="9501" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_with_alphanumeric_username -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:55:43 IST" name="tearDown" finished-at="2026-04-13T10:55:43 IST" duration-ms="93" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_with_alphanumeric_username status=SUCCESS method=TC002_SigninPositiveTest.verify_signin_with_alphanumeric_username()[pri:2, instance:testCases.TC002_SigninPositiveTest@177bea38] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:55:43 IST" name="setup" finished-at="2026-04-13T10:55:48 IST" duration-ms="5369" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC002_SigninPositiveTest.verify_signin_with_minimum_length_password()[pri:4, instance:testCases.TC002_SigninPositiveTest@177bea38] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_with_minimum_length_password()[pri:4, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:55:48 IST" name="verify_signin_with_minimum_length_password" description="POS-004: Verify signin with minimum length password" finished-at="2026-04-13T10:55:56 IST" duration-ms="7060" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_with_minimum_length_password -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:55:56 IST" name="tearDown" finished-at="2026-04-13T10:55:56 IST" duration-ms="104" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_with_minimum_length_password status=SUCCESS method=TC002_SigninPositiveTest.verify_signin_with_minimum_length_password()[pri:4, instance:testCases.TC002_SigninPositiveTest@177bea38] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:55:56 IST" name="setup" finished-at="2026-04-13T10:56:01 IST" duration-ms="5593" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC002_SigninPositiveTest.verify_signin_button_enabled_when_fields_filled()[pri:5, instance:testCases.TC002_SigninPositiveTest@177bea38] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_button_enabled_when_fields_filled()[pri:5, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:56:01 IST" name="verify_signin_button_enabled_when_fields_filled" description="POS-005: Verify signin button is enabled when fields are filled" finished-at="2026-04-13T10:56:10 IST" duration-ms="8526" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_button_enabled_when_fields_filled -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:56:10 IST" name="tearDown" finished-at="2026-04-13T10:56:10 IST" duration-ms="99" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_button_enabled_when_fields_filled status=SUCCESS method=TC002_SigninPositiveTest.verify_signin_button_enabled_when_fields_filled()[pri:5, instance:testCases.TC002_SigninPositiveTest@177bea38] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:56:10 IST" name="setup" finished-at="2026-04-13T10:56:18 IST" duration-ms="8573" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC002_SigninPositiveTest.verify_successful_signin_and_user_session()[pri:6, instance:testCases.TC002_SigninPositiveTest@177bea38] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_successful_signin_and_user_session()[pri:6, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:56:18 IST" name="verify_successful_signin_and_user_session" description="POS-006: Verify successful signin and user session" finished-at="2026-04-13T10:56:30 IST" duration-ms="11646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_successful_signin_and_user_session -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:56:30 IST" name="tearDown" finished-at="2026-04-13T10:56:30 IST" duration-ms="98" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_successful_signin_and_user_session status=SUCCESS method=TC002_SigninPositiveTest.verify_successful_signin_and_user_session()[pri:6, instance:testCases.TC002_SigninPositiveTest@177bea38] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T10:56:30 IST" name="tearDownClass" finished-at="2026-04-13T10:56:30 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testCases.TC050_BackorderRuleTest@3c9c0d96]" started-at="2026-04-21T18:11:40 IST" name="tearDownClass" finished-at="2026-04-21T18:11:40 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC002_SigninPositiveTest@177bea38]" started-at="2026-04-13T11:08:00 IST" name="closeDriver" finished-at="2026-04-13T11:08:00 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC050_BackorderRuleTest@3c9c0d96]" started-at="2026-04-21T18:11:40 IST" name="closeDriver" finished-at="2026-04-21T18:11:40 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- testCases.TC002_SigninPositiveTest -->
-      <class name="testCases.TC003_SigninNegativeTest">
-        <test-method is-config="true" signature="setupClass(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T10:56:30 IST" name="setupClass" finished-at="2026-04-13T10:56:30 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupClass -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T10:56:30 IST" name="setup" finished-at="2026-04-13T10:56:35 IST" duration-ms="5286" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_invalid_username()[pri:1, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_invalid_username()[pri:1, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T10:56:35 IST" name="verify_signin_fails_with_invalid_username" description="NEG-001: Verify signin fails with invalid username" finished-at="2026-04-13T10:57:40 IST" duration-ms="64862" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_invalid_username -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T10:57:40 IST" name="tearDown" finished-at="2026-04-13T10:57:40 IST" duration-ms="82" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_invalid_username status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_invalid_username()[pri:1, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T10:57:40 IST" name="setup" finished-at="2026-04-13T10:57:47 IST" duration-ms="6212" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_invalid_password()[pri:2, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_invalid_password()[pri:2, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T10:57:47 IST" name="verify_signin_fails_with_invalid_password" description="NEG-002: Verify signin fails with invalid password" finished-at="2026-04-13T10:58:52 IST" duration-ms="65290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_invalid_password -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T10:58:52 IST" name="tearDown" finished-at="2026-04-13T10:58:52 IST" duration-ms="81" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_invalid_password status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_invalid_password()[pri:2, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T10:58:52 IST" name="setup" finished-at="2026-04-13T10:58:59 IST" duration-ms="6558" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_both_invalid_credentials()[pri:3, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_both_invalid_credentials()[pri:3, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T10:58:59 IST" name="verify_signin_fails_with_both_invalid_credentials" description="NEG-003: Verify signin fails with both invalid username and password" finished-at="2026-04-13T11:00:03 IST" duration-ms="64368" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_both_invalid_credentials -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:00:03 IST" name="tearDown" finished-at="2026-04-13T11:00:03 IST" duration-ms="83" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_both_invalid_credentials status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_both_invalid_credentials()[pri:3, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:00:03 IST" name="setup" finished-at="2026-04-13T11:00:09 IST" duration-ms="5970" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_empty_username()[pri:4, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_empty_username()[pri:4, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:00:09 IST" name="verify_signin_fails_with_empty_username" description="NEG-004: Verify signin fails with empty username" finished-at="2026-04-13T11:01:13 IST" duration-ms="63752" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_empty_username -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:01:13 IST" name="tearDown" finished-at="2026-04-13T11:01:13 IST" duration-ms="87" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_empty_username status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_empty_username()[pri:4, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:01:13 IST" name="setup" finished-at="2026-04-13T11:01:18 IST" duration-ms="5664" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_empty_password()[pri:5, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_empty_password()[pri:5, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:01:18 IST" name="verify_signin_fails_with_empty_password" description="NEG-005: Verify signin fails with empty password" finished-at="2026-04-13T11:02:22 IST" duration-ms="63704" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_empty_password -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:02:22 IST" name="tearDown" finished-at="2026-04-13T11:02:22 IST" duration-ms="87" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_empty_password status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_empty_password()[pri:5, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:02:22 IST" name="setup" finished-at="2026-04-13T11:02:27 IST" duration-ms="5122" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_both_fields_empty()[pri:6, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_both_fields_empty()[pri:6, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:02:27 IST" name="verify_signin_fails_with_both_fields_empty" description="NEG-006: Verify signin fails with both fields empty" finished-at="2026-04-13T11:03:31 IST" duration-ms="63623" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_both_fields_empty -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:03:31 IST" name="tearDown" finished-at="2026-04-13T11:03:31 IST" duration-ms="82" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_both_fields_empty status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_both_fields_empty()[pri:6, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:03:31 IST" name="setup" finished-at="2026-04-13T11:03:37 IST" duration-ms="5575" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_sql_injection_in_username()[pri:7, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_sql_injection_in_username()[pri:7, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:03:37 IST" name="verify_signin_fails_with_sql_injection_in_username" description="NEG-007: Verify signin fails with SQL injection attempt in username" finished-at="2026-04-13T11:04:10 IST" duration-ms="33084" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_sql_injection_in_username -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:04:10 IST" name="tearDown" finished-at="2026-04-13T11:04:10 IST" duration-ms="77" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_sql_injection_in_username status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_sql_injection_in_username()[pri:7, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:04:10 IST" name="setup" finished-at="2026-04-13T11:04:15 IST" duration-ms="5400" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_xss_attempt_in_username()[pri:8, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_xss_attempt_in_username()[pri:8, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:04:15 IST" name="verify_signin_fails_with_xss_attempt_in_username" description="NEG-008: Verify signin fails with XSS attempt in username" finished-at="2026-04-13T11:04:48 IST" duration-ms="33172" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_xss_attempt_in_username -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:04:48 IST" name="tearDown" finished-at="2026-04-13T11:04:48 IST" duration-ms="79" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_xss_attempt_in_username status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_xss_attempt_in_username()[pri:8, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:04:48 IST" name="setup" finished-at="2026-04-13T11:05:27 IST" duration-ms="38596" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_very_long_username()[pri:9, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_very_long_username()[pri:9, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:05:27 IST" name="verify_signin_fails_with_very_long_username" description="NEG-009: Verify signin fails with very long username" finished-at="2026-04-13T11:05:31 IST" duration-ms="3466" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_very_long_username -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:05:31 IST" name="tearDown" finished-at="2026-04-13T11:05:31 IST" duration-ms="81" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_very_long_username status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_very_long_username()[pri:9, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:05:31 IST" name="setup" finished-at="2026-04-13T11:05:36 IST" duration-ms="5457" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_username_containing_only_spaces()[pri:10, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_username_containing_only_spaces()[pri:10, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:05:36 IST" name="verify_signin_fails_with_username_containing_only_spaces" description="NEG-010: Verify signin fails with username containing only spaces" finished-at="2026-04-13T11:06:40 IST" duration-ms="63793" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_username_containing_only_spaces -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:06:40 IST" name="tearDown" finished-at="2026-04-13T11:06:40 IST" duration-ms="80" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_username_containing_only_spaces status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_username_containing_only_spaces()[pri:10, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:06:40 IST" name="setup" finished-at="2026-04-13T11:06:45 IST" duration-ms="5262" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_case_sensitive_password_mismatch()[pri:11, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_case_sensitive_password_mismatch()[pri:11, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:06:45 IST" name="verify_signin_fails_with_case_sensitive_password_mismatch" description="NEG-011: Verify signin fails with case-sensitive password mismatch" finished-at="2026-04-13T11:07:18 IST" duration-ms="33096" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_case_sensitive_password_mismatch -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:07:18 IST" name="tearDown" finished-at="2026-04-13T11:07:18 IST" duration-ms="91" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_case_sensitive_password_mismatch status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_case_sensitive_password_mismatch()[pri:11, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:07:18 IST" name="setup" finished-at="2026-04-13T11:07:25 IST" duration-ms="7093" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[linux]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TC003_SigninNegativeTest.verify_signin_fails_with_invalid_password_format()[pri:12, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_signin_fails_with_invalid_password_format()[pri:12, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:07:25 IST" name="verify_signin_fails_with_invalid_password_format" description="NEG-012: Verify signin fails with invalid password format" finished-at="2026-04-13T11:08:00 IST" duration-ms="34168" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin_fails_with_invalid_password_format -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:08:00 IST" name="tearDown" finished-at="2026-04-13T11:08:00 IST" duration-ms="92" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_signin_fails_with_invalid_password_format status=SUCCESS method=TC003_SigninNegativeTest.verify_signin_fails_with_invalid_password_format()[pri:12, instance:testCases.TC003_SigninNegativeTest@30af5b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testCases.TC003_SigninNegativeTest@30af5b6b]" started-at="2026-04-13T11:08:00 IST" name="tearDownClass" finished-at="2026-04-13T11:08:00 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- testCases.TC003_SigninNegativeTest -->
-    </test> <!-- WMS Regression Tests -->
-  </suite> <!-- WMS Test Suite -->
+      </class> <!-- testCases.TC050_BackorderRuleTest -->
+    </test> <!-- Backorder Regression Tests -->
+  </suite> <!-- Backorder Test Suite -->
 </testng-results>

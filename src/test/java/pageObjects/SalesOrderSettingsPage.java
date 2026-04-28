@@ -299,6 +299,100 @@ public class SalesOrderSettingsPage extends BasePage {
 		}
 	}
 
+	/*
+	 * Backorder (On-Hold) settings helpers
+	 * These are generic helper methods that try multiple locator strategies to
+	 * find a backorder toggle related to a specific OU or Warehouse. The exact
+	 * locators may need adjustment to match application markup.
+	 */
+
+	public WebElement getBackorderToggleForOU(String ouName) {
+		try {
+			// try locating a row/label containing the OU name and a nearby checkbox/input
+			By[] locators = new By[] {
+				By.xpath("//label[contains(text(),'" + ouName + "')]/following::input[@type='checkbox' and (contains(@name,'backorder') or contains(@id,'backorder'))][1]"),
+				By.xpath("//tr[.//text()[contains(.,'" + ouName + "')]]//input[@type='checkbox' and (contains(@name,'backorder') or contains(@id,'backorder'))][1]"),
+				By.xpath("//div[contains(text(),'" + ouName + "')]/following::input[@type='checkbox' and (contains(@name,'backorder') or contains(@id,'backorder'))][1]"),
+				By.xpath("//input[@data-ou='" + ouName + "' and (@type='checkbox') and (contains(@name,'backorder') or contains(@id,'backorder'))]")
+			};
+
+			for (By locator : locators) {
+				try {
+					WebElement el = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+					if (el != null) return el;
+				} catch (Exception e) {
+					continue;
+				}
+			}
+			return null;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public void setBackorderForOU(String ouName, boolean enable) {
+		WebElement toggle = getBackorderToggleForOU(ouName);
+		if (toggle == null) {
+			throw new RuntimeException("Backorder toggle for OU '" + ouName + "' not found. Please update locator.");
+		}
+		try {
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", toggle);
+			Thread.sleep(300);
+			boolean selected = toggle.isSelected();
+			if (selected != enable) {
+				// try normal click
+				try { toggle.click(); } catch (Exception e) { ((JavascriptExecutor) driver).executeScript("arguments[0].click();", toggle); }
+				Thread.sleep(500);
+				// save settings
+				saveSettings();
+			}
+		} catch (Exception e) {
+			throw new RuntimeException("Failed to set backorder for OU '" + ouName + "': " + e.getMessage(), e);
+		}
+	}
+
+	public WebElement getBackorderToggleForWarehouse(String warehouseName) {
+		try {
+			By[] locators = new By[] {
+				By.xpath("//label[contains(text(),'" + warehouseName + "')]/following::input[@type='checkbox' and (contains(@name,'backorder') or contains(@id,'backorder'))][1]"),
+				By.xpath("//tr[.//text()[contains(.,'" + warehouseName + "')]]//input[@type='checkbox' and (contains(@name,'backorder') or contains(@id,'backorder'))][1]"),
+				By.xpath("//div[contains(text(),'" + warehouseName + "')]/following::input[@type='checkbox' and (contains(@name,'backorder') or contains(@id,'backorder'))][1]"),
+				By.xpath("//input[@data-warehouse='" + warehouseName + "' and (@type='checkbox') and (contains(@name,'backorder') or contains(@id,'backorder'))]")
+			};
+
+			for (By locator : locators) {
+				try {
+					WebElement el = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+					if (el != null) return el;
+				} catch (Exception e) {
+					continue;
+				}
+			}
+			return null;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public void setBackorderForWarehouse(String warehouseName, boolean enable) {
+		WebElement toggle = getBackorderToggleForWarehouse(warehouseName);
+		if (toggle == null) {
+			throw new RuntimeException("Backorder toggle for Warehouse '" + warehouseName + "' not found. Please update locator.");
+		}
+		try {
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", toggle);
+			Thread.sleep(300);
+			boolean selected = toggle.isSelected();
+			if (selected != enable) {
+				try { toggle.click(); } catch (Exception e) { ((JavascriptExecutor) driver).executeScript("arguments[0].click();", toggle); }
+				Thread.sleep(500);
+				saveSettings();
+			}
+		} catch (Exception e) {
+			throw new RuntimeException("Failed to set backorder for Warehouse '" + warehouseName + "': " + e.getMessage(), e);
+		}
+	}
+
 }
 
 
